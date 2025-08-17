@@ -1,0 +1,24 @@
+# Test Configuration
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+  
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+
+# Application Configuration for Tests
+app:
+  encryption:
+    secret-key: TestSecretKey123456789012345678901
+
+# Logging Configuration for Tests
+logging:
+  level:
+    com.gpayments: DEBUG
+    org.springframework.web: WARN
