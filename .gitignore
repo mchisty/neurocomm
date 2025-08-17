@@ -1,8 +1,4 @@
-# Remove the broken .gitignore
-rm .gitignore
-
-# Create a proper .gitignore file
-echo "# Java
+# Java
 target/
 *.class
 *.jar
@@ -46,4 +42,4 @@ mvnw.cmd
 
 # Logs
 logs/
-*.log" > .gitignore
+*.log
